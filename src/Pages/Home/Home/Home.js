@@ -6,12 +6,12 @@ import PopularCategory from "../PopularCategory/PopularCategory";
 
 const Home = () => {
     return (
-        <>
+        <div className="max-w-[1200px] mx-auto">
             <Banner></Banner>
             <AdvertisedItem></AdvertisedItem>
             <ProductCategory></ProductCategory>
             <PopularCategory></PopularCategory>
-        </>
+        </div>
     );
 };
 

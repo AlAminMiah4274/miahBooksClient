@@ -1,0 +1,464 @@
+[
+    {
+        "_id": 1,
+        "name": "Self Development",
+        "image": "https://i.ibb.co/gD2b3SG/self-Development.webp",
+        "books": [
+            {
+                "image": "https://i.ibb.co/tw66zmc/seven-Habits.webp",
+                "name": "The 7 Habits of Highly Effective People",
+                "resalePrice": "12",
+                "orginalPrice": "25",
+                "useYears": "7 months"
+            },
+            {
+                "image": "https://i.ibb.co/dPCvT85/how-to-win-friends.jpg",
+                "name": "How to Win Friends and Influence People",
+                "resalePrice": "10",
+                "orginalPrice": "30",
+                "useYears": "5 months"
+            },
+            {
+                "image": "https://i.ibb.co/mbNmx9P/atomic-habits.jpg",
+                "name": "Atomic Habits",
+                "resalePrice": "10",
+                "orginalPrice": "25",
+                "useYears": "10 months"
+            },
+            {
+                "image": "https://i.ibb.co/1XRGMNF/mindset.webp",
+                "name": "Mindset: The New Psychology of Success",
+                "resalePrice": "15",
+                "orginalPrice": "40",
+                "useYears": "5 months"
+            },
+            {
+                "image": "https://i.ibb.co/KbWfN5T/power-now.jpg",
+                "name": "The Power of Now",
+                "resalePrice": "20",
+                "orginalPrice": "45",
+                "useYears": "3 months"
+            },
+            {
+                "image": "https://i.ibb.co/0yRB0YC/5-second-rule.webp",
+                "name": "The 5 Second Rule: Transform your Life, Work, and Confidence with Everyday Courage",
+                "resalePrice": "11",
+                "orginalPrice": "50",
+                "useYears": "12 months"
+            },
+            {
+                "image": "https://i.ibb.co/fCwVs7J/mens-search.jpg",
+                "name": "Man's Search for Meaning",
+                "resalePrice": "15",
+                "orginalPrice": "60",
+                "useYears": "9 months"
+            },
+            {
+                "image": "https://i.ibb.co/hBDM5tt/awaken-giant.webp",
+                "name": "Awaken the Giant Within",
+                "resalePrice": "13",
+                "orginalPrice": "40",
+                "useYears": "6 months"
+            },
+            {
+                "image": "https://i.ibb.co/wMdh19q/daring-greatly.jpg",
+                "name": "Daring Greatly",
+                "resalePrice": "12",
+                "orginalPrice": "30",
+                "useYears": "5 months"
+            },
+            {
+                "image": "https://i.ibb.co/7SfmVSf/subtle-art.png",
+                "name": "The Subtle Art of Not Giving a F*ck",
+                "resalePrice": "14",
+                "orginalPrice": "45",
+                "useYears": "4 months"
+            }
+        ]
+    },
+    {
+        "_id": 2,
+        "name": "History",
+        "image": "https://i.ibb.co/FwjcMHs/history.jpg",
+        "books": [
+            {
+                "image": "https://i.ibb.co/3NF5CpL/people-History.jpg",
+                "name": "A People's History of the United States",
+                "resalePrice": "20",
+                "orginalPrice": "60",
+                "useYears": "8 months"
+            },
+            {
+                "image": "https://i.ibb.co/0GQmk3z/gun-August.jpg",
+                "name": "The Guns of August",
+                "resalePrice": "19",
+                "orginalPrice": "30",
+                "useYears": "8 months"
+            },
+            {
+                "image": "https://i.ibb.co/vLzsNBP/rise-fall.webp",
+                "name": "The Rise and Fall of the Third Reich",
+                "resalePrice": "15",
+                "orginalPrice": "45",
+                "useYears": "4 months"
+            },
+            {
+                "image": "https://i.ibb.co/9pY94QQ/guns-Germs.jpg",
+                "name": "Guns, Germs, and Steel",
+                "resalePrice": "12",
+                "orginalPrice": "30",
+                "useYears": "5 months"
+            },
+            {
+                "image": "https://i.ibb.co/hZsydt6/history-Ofthe-World.webp",
+                "name": "A History of the World in 6 Glasses",
+                "resalePrice": "14",
+                "orginalPrice": "40",
+                "useYears": "8 months"
+            },
+            {
+                "image": "https://i.ibb.co/kJgFM59/the-Swerve.webp",
+                "name": "The Swerve: How the World Became Modern",
+                "resalePrice": "15",
+                "orginalPrice": "50",
+                "useYears": "10 months"
+            },
+            {
+                "image": "https://i.ibb.co/99zkxyj/spqr.jpg",
+                "name": "SPQR: A History of Ancient Rome",
+                "resalePrice": "14",
+                "orginalPrice": "30",
+                "useYears": "7 months"
+            },
+            {
+                "image": "https://i.ibb.co/fSPP0kP/2nd-World-War.jpg",
+                "name": "The Second World War",
+                "resalePrice": "12",
+                "orginalPrice": "35",
+                "useYears": "8 months"
+            },
+            {
+                "image": "https://i.ibb.co/8btN1bq/devil.jpg",
+                "name": "The Devil in the White City",
+                "resalePrice": "19",
+                "orginalPrice": "40",
+                "useYears": "10 months"
+            },
+            {
+                "image": "https://i.ibb.co/vwbdPXN/silk-Roads.jpg",
+                "name": "The Silk Roads: A New History of the World",
+                "resalePrice": "16",
+                "orginalPrice": "52",
+                "useYears": "11 months"
+            }
+        ]
+    },
+    {
+        "_id": 3,
+        "name": "Politics",
+        "image": "https://i.ibb.co/9yrwr2H/politics.png",
+        "books": [
+            {
+                "image": "https://i.ibb.co/F3sf59f/clash-civilazations.jpg",
+                "name": "The Clash of Civilizations and the Remaking of World Order",
+                "resalePrice": "13",
+                "orginalPrice": "25",
+                "useYears": "6 months"
+            },
+            {
+                "image": "https://i.ibb.co/pL963PJ/american-diplomacy.webp",
+                "name": "The Tragedy of American Diplomacy",
+                "resalePrice": "15",
+                "orginalPrice": "30",
+                "useYears": "8 months"
+            },
+            {
+                "image": "https://i.ibb.co/GcVbW1S/post-american-world.jpg",
+                "name": "The Post-American World",
+                "resalePrice": "12",
+                "orginalPrice": "35",
+                "useYears": "4 months"
+            },
+            {
+                "image": "https://i.ibb.co/gShxZPk/rise-fall-power.jpg",
+                "name": "The Rise and Fall of the Great Powers",
+                "resalePrice": "15",
+                "orginalPrice": "40",
+                "useYears": "10 months"
+            },
+            {
+                "image": "https://i.ibb.co/sqWCM4D/the-revenge-of-geography.jpg",
+                "name": "The Revenge of Geography: What the Map Tells Us About Coming Conflicts and the Battle Against Fate",
+                "resalePrice": "14",
+                "orginalPrice": "40",
+                "useYears": "12 months"
+            },
+            {
+                "image": "https://i.ibb.co/VJ3qbWm/future-power.jpg",
+                "name": "The Future of Power",
+                "resalePrice": "16",
+                "orginalPrice": "30",
+                "useYears": "9 months"
+            },
+            {
+                "image": "https://i.ibb.co/nCvdzwQ/the-bottom-billion.jpg",
+                "name": "The Bottom Billion: Why the Poorest Countries are Failing and What Can Be Done About It",
+                "resalePrice": "15",
+                "orginalPrice": "50",
+                "useYears": "7 months"
+            },
+            {
+                "image": "https://i.ibb.co/zXwMpd4/looming-tower.jpg",
+                "name": "The Looming Tower: Al-Qaeda and the Road to 9/11",
+                "resalePrice": "18",
+                "orginalPrice": "40",
+                "useYears": "11 months"
+            },
+            {
+                "image": "https://i.ibb.co/bHgXf80/World-Order.jpg",
+                "name": "World Order",
+                "resalePrice": "18",
+                "orginalPrice": "40",
+                "useYears": "7 months"
+            },
+            {
+                "image": "https://i.ibb.co/j9C1JHt/the-audacity.jpg",
+                "name": "The Audacity of Hope: Thoughts on Reclaiming the American Dream",
+                "resalePrice": "18",
+                "orginalPrice": "40",
+                "useYears": "7 months"
+            }
+        ]
+    },
+    {
+        "_id": 4,
+        "name": "Literatures",
+        "image": "https://i.ibb.co/48QSS8b/literature.jpg",
+        "books": [
+            {
+                "image": "https://i.ibb.co/hCGCkbC/pride-and-prejudice.jpg",
+                "name": "Pride and Prejudice",
+                "resalePrice": "18",
+                "orginalPrice": "40",
+                "useYears": "7 months"
+            },
+            {
+                "image": "https://i.ibb.co/q0GT7WN/wuthering-heights.jpg",
+                "name": "Wuthering Heights",
+                "resalePrice": "18",
+                "orginalPrice": "40",
+                "useYears": "7 months"
+            },
+            {
+                "image": "https://i.ibb.co/Xj2x74h/jane-eyre.jpg",
+                "name": "Jane Eyre",
+                "resalePrice": "18",
+                "orginalPrice": "40",
+                "useYears": "7 months"
+            },
+            {
+                "image": "https://i.ibb.co/WsGjhSn/1984.jpg",
+                "name": "1984",
+                "resalePrice": "11",
+                "orginalPrice": "30",
+                "useYears": "9 months"
+            },
+            {
+                "image": "https://i.ibb.co/ynDN7CN/a-Mockingbird.webp",
+                "name": "To Kill a Mockingbird",
+                "resalePrice": "11",
+                "orginalPrice": "30",
+                "useYears": "9 months"
+            },
+            {
+                "image": "https://i.ibb.co/QX9xdMb/one-Hundred-Years.jpg",
+                "name": "One Hundred Years of Solitude",
+                "resalePrice": "11",
+                "orginalPrice": "30",
+                "useYears": "9 months"
+            },
+            {
+                "image": "https://i.ibb.co/yQ6QQqY/Great-Expectations.jpg",
+                "name": "Great Expectations",
+                "resalePrice": "11",
+                "orginalPrice": "30",
+                "useYears": "9 months"
+            },
+            {
+                "image": "https://i.ibb.co/1nyvVCh/Frankenstein.jpg",
+                "name": "Frankenstein",
+                "resalePrice": "11",
+                "orginalPrice": "30",
+                "useYears": "9 months"
+            },
+            {
+                "image": "https://i.ibb.co/jLMH8RV/century-Tales.webp",
+                "name": "The Canterbury Tales",
+                "resalePrice": "11",
+                "orginalPrice": "30",
+                "useYears": "9 months"
+            },
+            {
+                "image": "https://i.ibb.co/n0Hj1FL/westLand.jpg",
+                "name": "The Waste Land",
+                "resalePrice": "14",
+                "orginalPrice": "40",
+                "useYears": "5 months"
+            }
+        ]
+    },
+    {
+        "_id": 5,
+        "name": "Computer Science",
+        "image": "https://i.ibb.co/bXrMHrN/computer-Science.jpg",
+        "books": [
+            {
+                "image": "https://i.ibb.co/L5WCy53/the-Pragmatic-Programmer.jpg",
+                "name": "The Pragmatic Programmer: Your Journey to Mastery",
+                "resalePrice": "14",
+                "orginalPrice": "40",
+                "useYears": "5 months"
+            },
+            {
+                "image": "https://i.ibb.co/3cZcQZq/clean-Code.jpg",
+                "name": "Clean Code: A Handbook of Agile Software Craftsmanship",
+                "resalePrice": "14",
+                "orginalPrice": "40",
+                "useYears": "5 months"
+            },
+            {
+                "image": "https://i.ibb.co/ZdgjGFL/intro-To-Algorithm.jpg",
+                "name": "Introduction to Algorithms",
+                "resalePrice": "14",
+                "orginalPrice": "40",
+                "useYears": "5 months"
+            },
+            {
+                "image": "https://i.ibb.co/0mqp8Vg/structure-Interpretation.jpg",
+                "name": "Structure and Interpretation of Computer Programs",
+                "resalePrice": "14",
+                "orginalPrice": "40",
+                "useYears": "5 months"
+            },
+            {
+                "image": "https://i.ibb.co/WB09WmH/design-Pattern.jpg",
+                "name": "Design Patterns: Elements of Reusable Object-Oriented Software",
+                "resalePrice": "14",
+                "orginalPrice": "40",
+                "useYears": "5 months"
+            },
+            {
+                "image": "https://i.ibb.co/jkyMVs3/hidden-Language.jpg",
+                "name": "Code: The Hidden Language of Computer Hardware and Software",
+                "resalePrice": "14",
+                "orginalPrice": "40",
+                "useYears": "5 months"
+            },
+            {
+                "image": "https://i.ibb.co/hmVpthC/artificial-intelligence.jpg",
+                "name": "Artificial Intelligence: A Modern Approach",
+                "resalePrice": "14",
+                "orginalPrice": "40",
+                "useYears": "5 months"
+            },
+            {
+                "image": "https://i.ibb.co/WcKH6Wv/mythical-Man-Month.jpg",
+                "name": "The Mythical Man-Month: Essays on Software Engineering",
+                "resalePrice": "14",
+                "orginalPrice": "40",
+                "useYears": "5 months"
+            },
+            {
+                "image": "https://i.ibb.co/Z6B4hBG/computer-networks.jpg",
+                "name": "Computer Networks",
+                "resalePrice": "17",
+                "orginalPrice": "45",
+                "useYears": "3 months"
+            },
+            {
+                "image": "https://i.ibb.co/cYPB1Nc/theory-Of-Computation.jpg",
+                "name": "Introduction to the Theory of Computation",
+                "resalePrice": "17",
+                "orginalPrice": "45",
+                "useYears": "3 months"
+            }
+        ]
+    },
+    {
+        "_id": 6,
+        "name": "Fictions",
+        "image": "https://i.ibb.co/SfvgvnB/fictions.jpg",
+        "books": [
+            {
+                "image": "https://i.ibb.co/Y3h9CVQ/dune.jpg",
+                "name": "Dune",
+                "resalePrice": "17",
+                "orginalPrice": "45",
+                "useYears": "3 months"
+            },
+            {
+                "image": "https://i.ibb.co/LzHyKz1/neuromancer.webp",
+                "name": "Neuromancer",
+                "resalePrice": "17",
+                "orginalPrice": "45",
+                "useYears": "3 months"
+            },
+            {
+                "image": "https://i.ibb.co/Rz9KZM4/fundation.webp",
+                "name": "Foundation",
+                "resalePrice": "17",
+                "orginalPrice": "45",
+                "useYears": "3 months"
+            },
+            {
+                "image": "https://i.ibb.co/NCDFC6c/snow-Crash.jpg",
+                "name": "Snow Crash",
+                "resalePrice": "17",
+                "orginalPrice": "45",
+                "useYears": "3 months"
+            },
+            {
+                "image": "https://i.ibb.co/tMGG6kx/ender-Game.webp",
+                "name": "Ender's Game",
+                "resalePrice": "17",
+                "orginalPrice": "45",
+                "useYears": "3 months"
+            },
+            {
+                "image": "https://i.ibb.co/K5gkQrv/hitchikers.jpg",
+                "name": "The Hitchhiker's Guide to the Galaxy",
+                "resalePrice": "17",
+                "orginalPrice": "45",
+                "useYears": "3 months"
+            },
+            {
+                "image": "https://i.ibb.co/CQHsnbz/blade-Runner.jpg",
+                "name": "Blade Runner",
+                "resalePrice": "19",
+                "orginalPrice": "50",
+                "useYears": "8 months"
+            },
+            {
+                "image": "https://i.ibb.co/T2qmNj9/left-Handof-Darkness.webp",
+                "name": "The Left Hand of Darkness",
+                "resalePrice": "19",
+                "orginalPrice": "50",
+                "useYears": "8 months"
+            },
+            {
+                "image": "https://i.ibb.co/47GjpVd/brave-New-World.webp",
+                "name": "Brave New World",
+                "resalePrice": "19",
+                "orginalPrice": "50",
+                "useYears": "8 months"
+            },
+            {
+                "image": "https://i.ibb.co/jJWH7fd/hyperion.webp",
+                "name": "Hyperion",
+                "resalePrice": "19",
+                "orginalPrice": "50",
+                "useYears": "8 months"
+            }
+        ]
+    }
+]

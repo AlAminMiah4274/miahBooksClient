@@ -5,13 +5,13 @@ const Header = () => {
 
     const menuItems = <>
         <li><Link>Home</Link></li>
-        <li><Link>Dashboard</Link></li>
         <li><Link>Blog</Link></li>
+        <li><Link>Dashboard</Link></li>
         <li><Link>Login</Link></li>
     </>
 
     return (
-        <div className="navbar bg-lime-400">
+        <div className="navbar bg-red-300">
 
             <div className="navbar-start">
                 <div className="dropdown">
@@ -25,8 +25,10 @@ const Header = () => {
                 <Link className="text-3xl font-semibold">Nostalgic Narratives</Link>
             </div>
 
-            <div className="form-control">
-                <input type="text" placeholder="Search" className="input input-bordered w-full md:w-auto" />
+            <div className="flex items-center">
+                <div className="form-control">
+                    <input type="text" placeholder="Search" className="input input-bordered w-full md:w-auto" />
+                </div>
             </div>
 
             <div className="navbar-end hidden lg:flex">
