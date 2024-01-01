@@ -6,7 +6,7 @@ import PopularCategory from "../PopularCategory/PopularCategory";
 
 const Home = () => {
     return (
-        <div className="max-w-[1200px] mx-auto">
+        <div>
             <Banner></Banner>
             <AdvertisedItem></AdvertisedItem>
             <ProductCategory></ProductCategory>

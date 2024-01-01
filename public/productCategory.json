@@ -1,6 +1,5 @@
 [
     {
-        "_id": 1,
         "name": "Self Development",
         "image": "https://i.ibb.co/gD2b3SG/self-Development.webp",
         "books": [
@@ -77,7 +76,6 @@
         ]
     },
     {
-        "_id": 2,
         "name": "History",
         "image": "https://i.ibb.co/FwjcMHs/history.jpg",
         "books": [
@@ -154,7 +152,6 @@
         ]
     },
     {
-        "_id": 3,
         "name": "Politics",
         "image": "https://i.ibb.co/9yrwr2H/politics.png",
         "books": [
@@ -231,7 +228,6 @@
         ]
     },
     {
-        "_id": 4,
         "name": "Literatures",
         "image": "https://i.ibb.co/48QSS8b/literature.jpg",
         "books": [
@@ -308,7 +304,6 @@
         ]
     },
     {
-        "_id": 5,
         "name": "Computer Science",
         "image": "https://i.ibb.co/bXrMHrN/computer-Science.jpg",
         "books": [
@@ -385,7 +380,6 @@
         ]
     },
     {
-        "_id": 6,
         "name": "Fictions",
         "image": "https://i.ibb.co/SfvgvnB/fictions.jpg",
         "books": [

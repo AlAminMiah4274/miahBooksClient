@@ -22,7 +22,7 @@ const Header = () => {
                         {menuItems}
                     </ul>
                 </div>
-                <Link className="text-3xl font-semibold">Nostalgic Narratives</Link>
+                <Link className="text-3xl font-semibold">Miah Books</Link>
             </div>
 
             <div className="flex items-center">
