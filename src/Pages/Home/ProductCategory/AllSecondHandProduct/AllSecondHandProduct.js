@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import AllSecondHandProductCard from "./AllSecondHandProductCard";
 import BookingModal from "../BookingModal/BookingModal";
 
 const AllSecondHandProduct = () => {
 
+    const [bookInfo, setBookInfo] = useState(null); // to send as a prop to the modal 
     const product = useLoaderData();
     const books = product.books;
 
@@ -15,12 +16,16 @@ const AllSecondHandProduct = () => {
                     books.map(book => <AllSecondHandProductCard
                         key={book._id}
                         book={book}
+                        setBookInfo={setBookInfo}
                     ></AllSecondHandProductCard>)
                 }
             </div>
-            <div>
-                <BookingModal></BookingModal>
-            </div>
+            
+            {
+                bookInfo && <BookingModal
+                    bookInfo={bookInfo}
+                ></BookingModal>
+            }
         </>
     );
 };

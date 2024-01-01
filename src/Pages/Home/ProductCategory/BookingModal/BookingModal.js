@@ -1,6 +1,8 @@
 import React from "react";
 
-const BookingModal = () => {
+const BookingModal = ({ bookInfo }) => {
+
+    const {name, resalePrice} = bookInfo;
 
     const handleBookingModalForm = (event) => {
 
@@ -15,8 +17,9 @@ const BookingModal = () => {
                 <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"
                     onClick={() => document.getElementById('bookingModal').close()}
                 >✕</button>
-                <p>Name:</p>
-                <p>Price:</p>
+                
+                <p className="text-2xl font-semibold">{name}</p>
+                <p>Price: ${resalePrice}</p>
 
                 <form method="dialog" onSubmit={handleBookingModalForm} className="grid grid-cols-1 mt-10">
                     <input type="text" name="name" placeholder="Name" className="input input-bordered w-full" />
@@ -26,7 +29,7 @@ const BookingModal = () => {
                     <input type="text" name="phoneNumber" placeholder="Phone Number" className="input input-bordered w-full" />
                     <br />
                     <input type="text" name="location" placeholder="Location" className="input input-bordered w-full" />
-                    <br/>
+                    <br />
 
                     <input type="submit" value="Submit" className="btn btn-success w-full mt-10 text-white" />
                 </form>

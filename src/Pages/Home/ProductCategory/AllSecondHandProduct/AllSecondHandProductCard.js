@@ -1,6 +1,6 @@
 import React from "react";
 
-const AllSecondHandProductCard = ({ book }) => {
+const AllSecondHandProductCard = ({ book, setBookInfo }) => {
 
     const { name, image, orginalPrice, resalePrice, useYears } = book;
 
@@ -19,6 +19,7 @@ const AllSecondHandProductCard = ({ book }) => {
                 <div className="card-actions justify-center">
                     <button className="btn btn-success text-white"
                         onClick={() => document.getElementById('bookingModal').showModal()}
+                        onMouseEnter={() => setBookInfo(book)}
                     >Book Now</button>
                 </div>
             </div>
