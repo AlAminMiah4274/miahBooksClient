@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
+import { AuthContext } from "../../../../Contexts/AuthProvider";
 
 const BookingModal = ({ bookInfo }) => {
 
     const {name, resalePrice} = bookInfo;
+    const {user} = useContext(AuthContext);
 
     const handleBookingModalForm = (event) => {
 
@@ -18,17 +20,17 @@ const BookingModal = ({ bookInfo }) => {
                     onClick={() => document.getElementById('bookingModal').close()}
                 >✕</button>
                 
-                <p className="text-2xl font-semibold">{name}</p>
+                <p className="text-2xl font-semibold mt-3">{name}</p>
                 <p>Price: ${resalePrice}</p>
 
                 <form method="dialog" onSubmit={handleBookingModalForm} className="grid grid-cols-1 mt-10">
-                    <input type="text" name="name" placeholder="Name" className="input input-bordered w-full" />
+                    <input type="text" name="name" defaultValue={user?.displayName} disabled className="input input-bordered w-full" />
                     <br />
-                    <input type="email" name="email" placeholder="Email" className="input input-bordered w-full" />
+                    <input type="email" name="email" defaultValue={user?.email} disabled className="input input-bordered w-full" />
                     <br />
-                    <input type="text" name="phoneNumber" placeholder="Phone Number" className="input input-bordered w-full" />
+                    <input type="text" name="phoneNumber" placeholder="Phone Number" className="input input-bordered w-full" required/>
                     <br />
-                    <input type="text" name="location" placeholder="Location" className="input input-bordered w-full" />
+                    <input type="text" name="location" placeholder="Location" className="input input-bordered w-full" required />
                     <br />
 
                     <input type="submit" value="Submit" className="btn btn-success w-full mt-10 text-white" />

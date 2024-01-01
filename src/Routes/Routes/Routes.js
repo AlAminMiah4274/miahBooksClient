@@ -4,6 +4,7 @@ import Home from "../../Pages/Home/Home/Home";
 import AllSecondHandProduct from "../../Pages/Home/ProductCategory/AllSecondHandProduct/AllSecondHandProduct";
 import Login from "../../Pages/Login/Login/Login";
 import Register from "../../Pages/Login/Register/Register";
+import PrivateRoute from "../PrivateRoute/PrivateRoute";
 
 export const Router = createBrowserRouter([
     {
@@ -16,7 +17,7 @@ export const Router = createBrowserRouter([
             },
             {
                 path: "/secondHandProduct/:id",
-                element: <AllSecondHandProduct></AllSecondHandProduct>,
+                element: <PrivateRoute><AllSecondHandProduct></AllSecondHandProduct></PrivateRoute>,
                 loader: ({params}) => fetch(`http://localhost:5000/books/${params.id}`)
             },
             {
