@@ -1,10 +1,11 @@
 import React, { useContext } from "react";
 import { AuthContext } from "../../../../Contexts/AuthProvider";
+import toast from "react-hot-toast";
 
 const BookingModal = ({ bookInfo, setBookInfo }) => {
 
-    const {name, resalePrice} = bookInfo;
-    const {user} = useContext(AuthContext);
+    const { name, resalePrice } = bookInfo;
+    const { user } = useContext(AuthContext);
 
     const handleBookingModalForm = (event) => {
 
@@ -22,9 +23,24 @@ const BookingModal = ({ bookInfo, setBookInfo }) => {
             buyerName,
             buyerEmail: email,
             phoneNumber,
-            buyerLocation: location 
-        }
-        console.log(booking);
+            buyerLocation: location
+        };
+
+        // to send the booking to server side  
+        fetch(`http://localhost:5000/bookings`, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(booking)
+        })
+            .then(res => res.json())
+            .then(data => {
+
+                if(data.acknowledged){
+                    toast.success("Booking confirmed")
+                }
+            })
 
         setBookInfo(null);
     };
@@ -37,7 +53,7 @@ const BookingModal = ({ bookInfo, setBookInfo }) => {
                 <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"
                     onClick={() => document.getElementById('bookingModal').close()}
                 >✕</button>
-                
+
                 <p className="text-2xl font-semibold mt-3">{name}</p>
                 <p>Price: ${resalePrice}</p>
 
@@ -46,7 +62,7 @@ const BookingModal = ({ bookInfo, setBookInfo }) => {
                     <br />
                     <input type="email" name="email" defaultValue={user?.email} disabled className="input input-bordered w-full" />
                     <br />
-                    <input type="text" name="phoneNumber" placeholder="Phone Number" className="input input-bordered w-full" required/>
+                    <input type="text" name="phoneNumber" placeholder="Phone Number" className="input input-bordered w-full" required />
                     <br />
                     <input type="text" name="location" placeholder="Location" className="input input-bordered w-full" required />
                     <br />
