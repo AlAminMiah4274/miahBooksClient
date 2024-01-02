@@ -3,27 +3,46 @@ import { useForm } from "react-hook-form";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../../Contexts/AuthProvider";
 import toast from "react-hot-toast";
+import { GoogleAuthProvider } from "firebase/auth";
 
 const Login = () => {
 
-    const { userLogin } = useContext(AuthContext);
+    const { userLogin, googleLogin } = useContext(AuthContext);
     const { register, handleSubmit, formState: { errors } } = useForm();
     const location = useLocation();
     const navigate = useNavigate();
-    const from = location.state?.from?.pathname || 5000;
+    const from = location.state?.from?.pathname || "/";
+    const googleProvider = new GoogleAuthProvider();
 
+
+    // to handle login form 
     const handleLoginForm = data => {
 
         userLogin(data.email, data.password)
-            .then(result => {
-                const user = result.user;
-                console.log(user);
+            .then(() => {
 
                 toast.success("Successfully log in");
-
                 navigate(from, { replace: true });
             })
+            .catch(err => {
+                console.log(err);
+            })
     };
+
+    // function for login with google
+    const handleGoogleLogin = () => {
+
+        googleLogin(googleProvider)
+            .then(() => {
+
+                toast.success("Login successful with google");
+                navigate(from, { replace: true });
+            })
+            .catch(err => {
+                console.log(err);
+            })
+    };
+
 
     return (
         <div className="border my-20 lg:w-1/2 mx-auto p-10">
@@ -55,7 +74,8 @@ const Login = () => {
             <p className="text-sm text-center">New to Miah Books? <Link to="/register" className="text-success">Please register first</Link></p>
             <div className="divider">OR</div>
 
-            <button className="btn btn-outline w-full">Login with Google</button>
+            {/* google sign in button */}
+            <button onClick={handleGoogleLogin} className="btn btn-outline w-full">Login with Google</button>
         </div>
     );
 };

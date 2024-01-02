@@ -26,6 +26,7 @@ const AllSecondHandProduct = () => {
             {
                 bookInfo && <BookingModal
                     bookInfo={bookInfo}
+                    setBookInfo={setBookInfo}
                 ></BookingModal>
             }
         </>
