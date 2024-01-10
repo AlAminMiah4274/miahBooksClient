@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { useForm } from "react-hook-form";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../../Contexts/AuthProvider";
@@ -8,6 +8,7 @@ import { GoogleAuthProvider } from "firebase/auth";
 const Login = () => {
 
     const { userLogin, googleLogin } = useContext(AuthContext);
+    const [loginError, setLoginError] = useState('');
     const { register, handleSubmit, formState: { errors } } = useForm();
     const location = useLocation();
     const navigate = useNavigate();
@@ -18,6 +19,9 @@ const Login = () => {
     // to handle login form 
     const handleLoginForm = data => {
 
+        // to stop showing login error during retry
+        setLoginError('');
+
         userLogin(data.email, data.password)
             .then(() => {
 
@@ -25,12 +29,15 @@ const Login = () => {
                 navigate(from, { replace: true });
             })
             .catch(err => {
-                console.log(err);
+                setLoginError(err.message);
             })
     };
 
     // function for login with google
     const handleGoogleLogin = () => {
+
+        // to stop showing login error during retry
+        setLoginError('');
 
         googleLogin(googleProvider)
             .then(() => {
@@ -39,7 +46,7 @@ const Login = () => {
                 navigate(from, { replace: true });
             })
             .catch(err => {
-                console.log(err);
+                setLoginError(err.message);
             })
     };
 
@@ -67,6 +74,9 @@ const Login = () => {
 
                     {errors?.password && <p className="text-red-500 text-sm">{errors?.password?.message}</p>}
                 </label>
+
+                {/* to show error */}
+                {loginError && <p className="text-red-500 mt-5">{loginError}</p>}
 
                 <input type="submit" value="Submit" className="btn btn-neutral text-white w-full mt-10" />
             </form>

@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { useForm } from "react-hook-form";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../../Contexts/AuthProvider";
@@ -6,6 +6,7 @@ import toast from "react-hot-toast";
 
 const Register = () => {
 
+    const [registerError, setRegisterError] = useState('');
     const { register, handleSubmit, formState: { errors } } = useForm();
     const { userCreate, userProfileUpdate } = useContext(AuthContext);
     const navigate = useNavigate();
@@ -25,10 +26,12 @@ const Register = () => {
                         toast.success("Successfully registered");
                         navigate("/");
                     })
-                    .catch(err => console.log(err))
+                    .catch(err => {
+                        setRegisterError(err.message);
+                    })
             })
             .catch(err => {
-                console.log(err);
+                setRegisterError(err.message);
             })
     };
 
@@ -67,6 +70,9 @@ const Register = () => {
 
                     {errors?.password && <p className="text-red-500 text-sm">{errors?.password?.message}</p>}
                 </label>
+
+                {/* to show register error */}
+                {registerError && <p className="text-red-500 mt-5 text-sm">{registerError}</p>}
 
                 <input type="submit" value="Submit" className="btn btn-neutral w-full mt-10" />
             </form>
