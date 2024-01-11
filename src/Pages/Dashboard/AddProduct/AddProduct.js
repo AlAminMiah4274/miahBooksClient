@@ -22,13 +22,37 @@ const AddProduct = () => {
             .then(res => res.json())
             .then(imgData => {
 
-                if(imgData.success){
-                    toast.success("your image successfully uploaded");
-                    navigate("/dashboard/myProduct");
+                if (imgData.success) {
+
+                    const product = {
+                        productName: data.productName,
+                        productPrice: data.productPrice,
+                        productCondition: data.productCondition,
+                        sellerNumber: data.sellerNumber,
+                        sellerLocation: data.sellerLocation,
+                        productCategory: data.productCategory,
+                        purchaseYear: data.purchaseYear,
+                        productImage: imgData.data.url,
+                        description: data.description
+                    };
+
+                    fetch(`http://localhost:5000/products`, {
+                        method: "POST",
+                        headers: {
+                            "Content-Type": "application/json"
+                        },
+                        body: JSON.stringify(product)
+                    })
+                        .then(res => res.json())
+                        .then(productData => {
+
+                            if (productData.acknowledged) {
+                                toast.success("your book successfully added");
+                                navigate("/dashboard/myProduct");
+                            };
+                        })
                 };
             })
-
-        console.log(image);
     };
 
     return (
