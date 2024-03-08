@@ -59,7 +59,7 @@ const Login = () => {
 
                 <label className="form-control w-full">
                     <div className="label"><span className="label-text">Email</span></div>
-                    <input type="email" placeholder="Your Name" {...register("email", {
+                    <input type="email" placeholder="Your Email" {...register("email", {
                         required: "email is required"
                     })} className="input input-bordered w-full" />
 
